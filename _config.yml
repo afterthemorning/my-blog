@@ -69,4 +69,6 @@ theme: hexo-theme-icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/afterthemorning/raul.github.io.git
+  repo: https://github.com/afterthemorning/blog.github.io.git
+  branch: master
+  user: afterthemorning

@@ -9,6 +9,92 @@ body:after {
 body:after {
   clear: both;
 }
+.bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("images/img_broken_link.jpg");
+  -webkit-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+h1 {
+  font-family: 'Ginger', 'Garamond', sans-serif;
+  font-size: 30px;
+  margin: 0 0 0.5rem;
+}
+p {
+  color: #4a4a4a;
+  font-size: 20px;
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.025em;
+}
+.error-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 20px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f1574b;
+  border: 0;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f1574b;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Ginger', sans-serif, 'Garamond';
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  padding: 1em 2.5em;
+  pointer-events: auto;
+  text-decoration: none;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -ms-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.button:hover {
+  background-color: #fff;
+  color: #f1574b;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
 html,
 body,
 div,
