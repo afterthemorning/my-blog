@@ -8,7 +8,7 @@
     <meta name="description" content="梦想成为一名顶尖的工程师，我行我素的穿梭在时光旅行中.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tags">
-<meta property="og:url" content="http://www.raultang.com/tags/index.html">
+<meta property="og:url" content="http://blog.raultang.com/tags/index.html">
 <meta property="og:site_name" content="Raul Tang's Blog">
 <meta property="og:description" content="梦想成为一名顶尖的工程师，我行我素的穿梭在时光旅行中.">
 <meta property="og:updated_time" content="2016-12-06T06:30:28.941Z">
@@ -21,6 +21,8 @@
         <link rel="alternate" href="/" title="Raul Tang&#39;s Blog" type="application/atom+xml" />
     
 
+    
+        <link rel="icon" href="/css/images/favicon.png" />
     
 
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
@@ -39,6 +41,32 @@
     
     
     
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?10d37feca935b351bf9873e98fe2440f";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
     
 
 
@@ -62,8 +90,6 @@
                     <a class="main-nav-link" href="/categories">分类</a>
                 
                     <a class="main-nav-link" href="/tags">标签</a>
-                
-                    <a class="main-nav-link" href="/about">关于</a>
                 
             </nav>
             
@@ -128,8 +154,6 @@
                 
                     <td><a class="main-nav-link" href="/tags">标签</a></td>
                 
-                    <td><a class="main-nav-link" href="/about">关于</a></td>
-                
                 <td>
                     
     <div class="search-form">
@@ -161,7 +185,7 @@
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                0
+                1
                 <span>标签</span>
             </div>
         </div>
@@ -215,6 +239,8 @@
     </div>
     <div class="layout-wrap-inner tag-cloud">
         
+            <a href="/tags/Hexo-Tutorial/" style="font-size: 14px;">Hexo Tutorial</a>
+        
     </div>
 </section></section>
             
@@ -229,18 +255,18 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2016/12/05/hello-world/" class="thumbnail">
+                            <a href="/2016/12/05/new-hexo/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/gallery/new-hexo.png)" alt="Hexo + Github Pages 个人博客构建指南" class="thumbnail-image"></span>
     
 </a>
 
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2016/12/05/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tutorial/">Tutorial</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Tutorial/Hexo-Tutorial/">Hexo Tutorial</a></p>
+                            <p class="item-title"><a href="/2016/12/05/new-hexo/" class="title">Hexo + Github Pages 个人博客构建指南</a></p>
                             <p class="item-date"><time datetime="2016-12-05T09:40:31.465Z" itemprop="datePublished">2016-12-05</time></p>
                         </div>
                     </li>
@@ -251,6 +277,13 @@
 
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Tutorial/">Tutorial</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Tutorial/Hexo-Tutorial/">Hexo Tutorial</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
     
         
     <div class="widget-wrap">
@@ -262,8 +295,22 @@
 
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-Tutorial/">Hexo Tutorial</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Hexo-Tutorial/" style="font-size: 10px;">Hexo Tutorial</a>
+        </div>
+    </div>
+
     
         
     <div class="widget-wrap widget-list">
@@ -296,20 +343,17 @@
 
         
     
-    <script>
-    var disqus_config = function () {
-        
-            this.page.url = 'http://www.raultang.com/tags/index.html';
-        
-        this.page.identifier = 'undefined';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'raultang'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
-</script>
+    </script>
 
 
 
