@@ -1,5 +1,6 @@
 ---
 title: Hexo + Github Pages 个人博客构建指南
+subtitle: Hexo + Github Pages Personal Blog Guide
 date: {{ date }}
 tags: Hexo Tutorial
 categories:
@@ -166,6 +167,88 @@ Example: https://test.github.io/myblog.github.io/
 1. 静态文件压缩
    |- 图片进行无损压缩;
    |- html,css,js进行合并压缩;
+   关于HTML,CSS,JS文件的合并压缩，我进行了以下操作，由于Hexo有一些引用的问题，所以并没有进行合并操作，会有大量的路径需要修改，所以我只进行了HTML,JS,Image的压缩.
+   具体操作流程如下:
+
+   1.本次使用gulp作为构建工具, 先全局安装gulp;
+
+   ``` bash
+   npm install glup
+   ```
+   2.安装相关的合并压缩插件;
+
+   ``` bash
+   npm install gulp-htmlclean  --save
+   npm install gulp-htmlmin    --save
+   npm install gulp-imagemin   --save
+   npm install gulp-minify-css --save
+   npm install gulp-uglify     --save
+   ```
+   执行完成以上命令之后，它们的依赖信息会被保存到Hexo根目录/package.json中.
+
+   3.创建gulpfile.js, 编写构建命令文件; 此文件需放在Hexo根目录;
+      本次注释了关于CSS的压缩，因为minify-css会把某些CSS压坏了.
+
+   ``` js
+   var gulp = require('gulp');
+   var minifycss = require('gulp-minify-css');
+   var uglify = require('gulp-uglify');
+   var htmlmin = require('gulp-htmlmin');
+   var htmlclean = require('gulp-htmlclean');
+   var imagemin = require('gulp-imagemin')
+
+   // 压缩 public 目录 css
+
+   //gulp.task('minify-css', function() {
+   //    return gulp.src('./public/**/*.css')
+   //        .pipe(minifycss())
+   //        .pipe(gulp.dest('./public/test'));
+   //});
+
+   // 压缩 public 目录 html
+   gulp.task('minify-html', function() {
+     return gulp.src('./public/**/*.html')
+       .pipe(htmlclean())
+       .pipe(htmlmin({
+            removeComments: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true,
+       }))
+       .pipe(gulp.dest('./public/'))
+   });
+
+   // 压缩 public/js 目录 js
+   gulp.task('minify-js', function() {
+       return gulp.src('./public/**/*.js')
+           .pipe(uglify())
+           .pipe(gulp.dest('./public/'));
+   });
+
+   // 压缩图片任务
+   // 在命令行输入 gulp images 启动此任务
+   gulp.task('images', function () {
+       // 1. 找到图片
+       gulp.src('./public/**/*.png')
+       // 2. 压缩图片
+           .pipe(imagemin({
+               progressive: true
+           }))
+       // 3. 另存图片
+          .pipe(gulp.dest('./public/'))
+   });
+
+   // 执行 gulp 命令时执行的任务
+   gulp.task('default', ['minify-html','minify-js','images']);
+   ```
+   4.在Hexo根目录执行以下命令即可;
+   ```bash
+   hexo clean && hexo generate
+   gulp   --> 压缩合并
+   hexo deploy
+   ```
+   需要注意的是:使用hexo server并不能看到压缩后的效果，有可能是我设置的有问题，但是部署到github之后就正常了.不过可以先hexo sever进行查看是否有问题。
+
 2. 图片资源CDN加速
    |- 如果你是针对国内的话，可以使用七牛云 - http://qiniu.com 的空间存放图片.他们也有一个免费的计划，访问量不大的话可以使用;
 3. SEO优化
