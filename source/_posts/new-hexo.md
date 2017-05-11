@@ -254,6 +254,9 @@ Example: https://test.github.io/myblog.github.io/
 3. SEO优化
    |- 主动提交你的博客到百度或者Google等各大搜索引擎，提高收录概率;
 
+
+hexo clean && hexo generate && gulp && hexo deploy
+
 ##### 9. 参考资料
 
 1. Hexo官方文档 - https://hexo.io/docs/index.html

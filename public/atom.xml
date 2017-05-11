@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.raultang.com/"/>
-  <updated>2017-03-14T03:47:12.677Z</updated>
+  <updated>2017-05-11T08:20:22.279Z</updated>
   <id>http://blog.raultang.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Front-End Developer Handbook 2017</title>
+    <link href="http://blog.raultang.com/Front-End-Developer-book/handbook/Front-End-Developer-Handbook-2017/"/>
+    <id>http://blog.raultang.com/Front-End-Developer-book/handbook/Front-End-Developer-Handbook-2017/</id>
+    <published>2017-04-20T06:24:17.160Z</published>
+    <updated>2017-05-11T08:20:22.279Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简介-amp-前言"><a href="#简介-amp-前言" class="headerlink" title="简介&amp;前言"></a>简介&amp;前言</h4><p>一直都在不断的寻找，可以系统学习前端知识的资料，最近找到一个写的比较专业的 - Front-End Developer Handbook 2017</p>
+<p>目前才看了前几章，总体来说还是很专业的，有很多的知识点，有以前不知道的，比较新的技术，框架等。</p>
+<p>正如他们官方的介绍:</p>
+<p>This is a guide that anyone could use to learn about the practice of front-end development. It broadly outlines and discusses the practice of front-end engineering: how to learn it and what tools are used when practicing it in 2017.</p>
+<p>You’ve got the basics down and don’t want to learn from teachers who just spoon feed you their google results – you want to learn from the masters! Here, you get experts as teachers。</p>
+<p>想要成为大师级的前端工程师，可以从这里开始:<br>从最基础的前端工程师的定义，到各科各门的具体技术说明都有。</p>
+<a id="more"></a>
+<p>以后把学习的笔记写也在此篇博客当中，让这篇文章变得更充实，更有意义。</p>
+<p>附录:</p>
+<p><a href="https://frontendmasters.com/" target="_blank" rel="external">Front-End Master</a> - <a href="https://frontendmasters.com/" target="_blank" rel="external">https://frontendmasters.com/</a><br><a href="https://frontendmasters.com/books/front-end-handbook/2017/" target="_blank" rel="external">Front-End Developer Handbook</a> - <a href="https://frontendmasters.com/books/front-end-handbook/2017/。" target="_blank" rel="external">https://frontendmasters.com/books/front-end-handbook/2017/。</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;简介-amp-前言&quot;&gt;&lt;a href=&quot;#简介-amp-前言&quot; class=&quot;headerlink&quot; title=&quot;简介&amp;amp;前言&quot;&gt;&lt;/a&gt;简介&amp;amp;前言&lt;/h4&gt;&lt;p&gt;一直都在不断的寻找，可以系统学习前端知识的资料，最近找到一个写的比较专业的 - Front-End Developer Handbook 2017&lt;/p&gt;
+&lt;p&gt;目前才看了前几章，总体来说还是很专业的，有很多的知识点，有以前不知道的，比较新的技术，框架等。&lt;/p&gt;
+&lt;p&gt;正如他们官方的介绍:&lt;/p&gt;
+&lt;p&gt;This is a guide that anyone could use to learn about the practice of front-end development. It broadly outlines and discusses the practice of front-end engineering: how to learn it and what tools are used when practicing it in 2017.&lt;/p&gt;
+&lt;p&gt;You’ve got the basics down and don’t want to learn from teachers who just spoon feed you their google results – you want to learn from the masters! Here, you get experts as teachers。&lt;/p&gt;
+&lt;p&gt;想要成为大师级的前端工程师，可以从这里开始:&lt;br&gt;从最基础的前端工程师的定义，到各科各门的具体技术说明都有。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Front-End Developer book" scheme="http://blog.raultang.com/categories/Front-End-Developer-book/"/>
+    
+      <category term="handbook" scheme="http://blog.raultang.com/categories/Front-End-Developer-book/handbook/"/>
+    
+    
+      <category term="Front-End" scheme="http://blog.raultang.com/tags/Front-End/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx服务器相关配置</title>
@@ -424,7 +463,7 @@ Nginx HTTPS默认端口: TCP 443
     <link href="http://blog.raultang.com/Tutorial/Hexo-Tutorial/new-hexo/"/>
     <id>http://blog.raultang.com/Tutorial/Hexo-Tutorial/new-hexo/</id>
     <published>2016-12-05T09:40:31.465Z</published>
-    <updated>2017-03-14T03:42:44.194Z</updated>
+    <updated>2017-05-11T08:23:55.072Z</updated>
     
     <content type="html"><![CDATA[<h4 id="简介-amp-前言"><a href="#简介-amp-前言" class="headerlink" title="简介&amp;前言"></a>简介&amp;前言</h4><p>早些时候，已经了解了一些类似的博客框架，但是一直也没有着手实践一回，最近使用Hexo构建了一个自己的博客，在此记录下Hexo + Github Pages博客构建过程。</p>
 <h4 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h4><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -508,6 +547,7 @@ Nginx HTTPS默认端口: TCP 443
 </li>
 <li>SEO优化<br>|- 主动提交你的博客到百度或者Google等各大搜索引擎，提高收录概率;</li>
 </ol>
+<p>hexo clean &amp;&amp; hexo generate &amp;&amp; gulp &amp;&amp; hexo deploy</p>
 <h5 id="9-参考资料"><a href="#9-参考资料" class="headerlink" title="9. 参考资料"></a>9. 参考资料</h5><ol>
 <li>Hexo官方文档 - <a href="https://hexo.io/docs/index.html" target="_blank" rel="external">https://hexo.io/docs/index.html</a></li>
 <li>博客主题     - <a href="https://github.com/ppoffice" target="_blank" rel="external">https://github.com/ppoffice</a></li>

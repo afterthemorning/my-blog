@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.raultang.com/TECH/Nginx/nginx-configurations-guide/</loc>
+    <loc>http://blog.raultang.com/Tutorial/Hexo-Tutorial/new-hexo/</loc>
     
-    <lastmod>2017-03-14T03:47:12.677Z</lastmod>
+    <lastmod>2017-05-11T08:23:55.072Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.raultang.com/Tutorial/Hexo-Tutorial/new-hexo/</loc>
+    <loc>http://blog.raultang.com/Front-End-Developer-book/handbook/Front-End-Developer-Handbook-2017/</loc>
     
-    <lastmod>2017-03-14T03:42:44.194Z</lastmod>
+    <lastmod>2017-05-11T08:20:22.279Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.raultang.com/TECH/Nginx/nginx-configurations-guide/</loc>
+    
+    <lastmod>2017-03-14T03:47:12.677Z</lastmod>
     
   </url>
   
